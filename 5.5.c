@@ -19,7 +19,7 @@ int main()
         {
 
             sum=0;
-            for (x=i;i<m+i;x++)
+            for (x=i;x<m+i;x++)
             {
                 for (y=j;y<m+j;y++)
                 {
@@ -27,13 +27,13 @@ int main()
                 }
 
             }
-        }
-        if (sum>max)
-        {
+            if (sum>max)
+            {
             max=sum;
+            }
         }
+
     }
-    printf ("%d",sum);
     printf ("%d",max);
     return 0;
 }

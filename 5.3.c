@@ -17,6 +17,16 @@ int main()
                 }
             }
             i=0;
+            if(e==1)
+            {
+                x++;
+                if(x==n)
+                {
+                    printf ("%d",j);
+                    break ;
+                }
+            }
         }
+        return 0;
 
 }

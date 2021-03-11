@@ -6,6 +6,7 @@ int main()
     scanf ("%d",&n);
     int a[n][n];
     scanf ("%d",&m);
+    int b[m][m],c;
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
@@ -13,12 +14,12 @@ int main()
             scanf("%d",&a[i][j]);
         }
     }
-     for(i=0;i<n;i++)
+    for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
         {
-            printf("%d",a[i][j]);
+
+            printf ("%d",b[i][j]);
         }
-        printf("\n");
     }
 }

@@ -2,7 +2,7 @@
 int main()
 {
     int i,j,x,y;
-    int n,m,max=0,sum;
+    int n,m,max,sum;
     scanf ("%d",&n);
     int a[n][n];
     scanf ("%d",&m);
@@ -27,9 +27,13 @@ int main()
                 }
 
             }
+            if (i==0&&j==0)
+            {
+                max=sum;
+            }
             if (sum>max)
             {
-            max=sum;
+                max=sum;
             }
         }
 

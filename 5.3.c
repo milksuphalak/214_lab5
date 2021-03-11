@@ -1,16 +1,22 @@
 #include <stdio.h>
 int main()
 {
-    int i=2,j,n;
+    int i=0,j,n,x=0,m[3]={2,3,5},e;
     scanf ("%d",&n);
-    while (i<=n)
-    {
-        for (j=2;1;j++)
+        for (j=1;1;j++)
         {
-            if(j%2==0||j%3==0||j%5==0)
+            e=j;
+            while (i!=3)
             {
-                printf ("%d",j);
+                if (e%m[i]==0)
+                {
+                    e/=m[i];
+                } else
+                {
+                    i++;
+                }
             }
+            i=0;
         }
-    }
+
 }
